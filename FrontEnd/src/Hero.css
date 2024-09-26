@@ -1,0 +1,110 @@
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url('hero-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.side-content {
+    width: 50%;
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.side-content h1 {
+    font-size: 50px;
+}
+.side-content p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.side-content a {
+    color: aliceblue;
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px 23px;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.side-content .arrow {
+    display: none;
+}
+.side-content a:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    font-weight: 600;
+}
+.fa-arrow-right {
+    margin-left: 20px;
+    transition: transform 0.3s ease-in;
+}
+.fa-arrow-right:hover {
+    cursor: pointer;
+    transform: translateX(10px);
+}
+
+@media screen and (max-width: 1200px) {
+    .side-content {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .side-content {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    .side-content h1 {
+        font-size: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .side-content h1 {
+        font-size: 35px;
+    }
+    .side-content p {
+        font-size: 20px;
+    }
+}
+
+@media  screen and (max-width: 320px) {
+    .side-content {
+        width: 80%;
+        position: absolute;
+        top: 35%;
+    }
+    .side-content h1 {
+        font-size: 28px;
+    }
+    .side-content p {
+        font-size: 13px;
+    }
+    .side-content a {
+        display: none;
+    }
+    .side-content .arrow {
+        display: contents;
+    }
+    .side-content .arrow .fa-arrow-right {
+        color: black;
+        border: 1px solid black; 
+        padding: 8px 13px;
+        border-radius: 30px;
+    }
+    .side-content .arrow .fa-arrow-right:hover {
+        background-color: black;
+        color: aliceblue;
+    }
+}

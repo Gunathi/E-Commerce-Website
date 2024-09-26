@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login, 
+.signup {
+    background-color: aliceblue;
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    padding: 50px;
+}
+.login .heading, 
+.signup .heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.login .heading h1, 
+.signup .heading h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.login .form label, 
+.signup .form label {
+    font-size: 17px;
+}
+.login .form .form-details input, 
+.signup .form .form-details input {
+    height: 40px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid rgb(221, 219, 219);
+    background-color: transparent;
+    padding: 10px 20px;
+}
+.login .form .check {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.login .form .check .check-box input {
+    margin-right: 10px;
+} 
+.login .form .check a {
+    text-decoration: none;
+    color: #77583e;
+}
+.login .form .check a:hover, 
+.login .form .create span a:hover,
+.signup .form .check a:hover, 
+.signup .form .create span a:hover {
+    color: #513c2a;
+    border-bottom: 1px solid #77583e;
+}
+.login .form .create, 
+.signup .form .create {
+    display: flex;
+    justify-content: space-between;
+}
+.login .form .create button, 
+.signup .form .create button {
+    font-size: 18px;
+    padding: 10px 25px;
+}
+.login .form .create span a,
+.signup .form .create span a {
+    text-decoration: none;
+    color: #77583e;
+}
+
+
+
+/* signup styles */
+.signup-body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('home2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.signup {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    padding: 50px;
+}
+.signup .form .create {
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 1200px) {
+    .login {
+        position: absolute;
+        top: 10%;
+    }
+    .signup {
+        width: 60%;
+        position: absolute;
+        top: 4%;
+        left: 20%;
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .login {
+        width: 60%;
+        position: absolute;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login .form .create {
+        display: flex;
+        flex-direction: column;
+    }
+    .login .form .create p {
+        margin-bottom: 20px;
+    }
+    .signup {
+        width: 75%;
+        position: absolute;
+        left: 12.5%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .signup-body {
+        height: 113vh;
+    }
+    .login, .signup {
+        width: 95%;
+        position: absolute;
+        left: 2.5%;
+        top: 2.5%;
+        padding: 30px 40px;
+    }
+    .signup .create {
+        display: flex;
+        flex-direction: column;
+    }
+    .signup .create p {
+        margin-bottom: 30px;
+    }
+}
